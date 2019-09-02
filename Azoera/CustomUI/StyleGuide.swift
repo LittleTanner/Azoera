@@ -7,6 +7,23 @@
 //
 
 import UIKit
+
+extension UIView {
+    
+    func addCornerRadius(_ radius: CGFloat = 4) {
+        layer.cornerRadius = radius
+    }
+    
+    func addAccentBorder(width: CGFloat = 1, color: UIColor = .borderHighlightGray) {
+        layer.borderWidth = width
+        layer.borderColor = color.cgColor
+    }
+    
+    func rotate(by radians: CGFloat = -CGFloat.pi/2) {
+        transform = CGAffineTransform(rotationAngle: radians)
+    }
+}
+
 struct FontNames {
     static let latoBold = "Lato-Bold"
     static let latoRegular = "Lato-Regular"
@@ -14,9 +31,10 @@ struct FontNames {
 }
 
 extension UIColor {
-    //TODO: - Add spaceGray and greenAccent Colors
-    static let borderHighlightGray = UIColor(named: "boderHighlight")!
-    static let subltleTextColor = UIColor(named: "subtleText")!
+    static let spaceGray = UIColor(named: "spaceGray")!
+    static let greenAccent = UIColor(named: "greenAccent")!
+    static let borderHighlightGray = UIColor(named: "borderHighlight")!
+    static let subtleTextColor = UIColor(named: "subtleText")!
     static let mainTextColor = UIColor(named: "mainText")!
     static let blackOverlay = UIColor(named: "blackOverlay")!
 }
