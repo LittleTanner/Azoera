@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="077-zL-3Ry">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="077-zL-3Ry">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,13 +18,127 @@
                     <view key="view" contentMode="scaleToFill" id="Mxe-tz-jih">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="B4l-OI-72s">
+                                <rect key="frame" x="52.5" y="281" width="340.5" height="168"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-N0-ti4">
+                                        <rect key="frame" x="0.0" y="0.0" width="81.5" height="168"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSo-Do-cHa">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="80"/>
+                                                <state key="normal" title="Login in"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEo-Zx-7aE">
+                                                <rect key="frame" x="0.0" y="88" width="81.5" height="80"/>
+                                                <state key="normal" title="Sign up"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="9cN-j0-14d">
+                                        <rect key="frame" x="81.5" y="0.0" width="259" height="168"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JcV-ob-0LB">
+                                                <rect key="frame" x="0.0" y="0.0" width="259" height="46.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="0BQ-8e-A36"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your password " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kN3-e3-bHZ">
+                                                <rect key="frame" x="0.0" y="60.5" width="259" height="46.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKe-gv-5EF">
+                                                <rect key="frame" x="0.0" y="121" width="259" height="47"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5Lm-0r-NaE">
+                                <rect key="frame" x="287" y="463" width="74" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Q8-Hy-wdm">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                        <state key="normal" title="Help?"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ilh-c3-hSL">
+                                        <rect key="frame" x="44" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="FAQ"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB4-sl-hIF">
+                                <rect key="frame" x="134" y="553" width="201" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.73333333333333328" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sign me up"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="d2P-jm-SOD">
+                                <rect key="frame" x="52.5" y="127" width="225" height="89.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Azoera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlG-LV-4ak">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or sign up to explore new Azoera features" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-7y-tof">
+                                        <rect key="frame" x="0.0" y="48.5" width="207" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="azoreoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="piz-FP-pFc">
+                                <rect key="frame" x="52.5" y="42.5" width="44.5" height="44.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="piz-FP-pFc" secondAttribute="height" multiplier="1:1" id="lPS-NG-EIy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HB4-sl-hIF" firstAttribute="top" secondItem="5Lm-0r-NaE" secondAttribute="bottom" constant="60" id="0uN-AZ-ZXi"/>
+                            <constraint firstItem="HB4-sl-hIF" firstAttribute="leading" secondItem="9cN-j0-14d" secondAttribute="leading" id="1ut-M9-GnF"/>
+                            <constraint firstItem="piz-FP-pFc" firstAttribute="leading" secondItem="d2P-jm-SOD" secondAttribute="leading" id="53u-dH-9CQ"/>
+                            <constraint firstItem="HB4-sl-hIF" firstAttribute="height" secondItem="Mxe-tz-jih" secondAttribute="height" multiplier="0.065" id="8Rt-5d-1aB"/>
+                            <constraint firstItem="piz-FP-pFc" firstAttribute="height" secondItem="Mxe-tz-jih" secondAttribute="height" multiplier="0.067" id="AA3-AT-aX1"/>
+                            <constraint firstItem="d2P-jm-SOD" firstAttribute="leading" secondItem="rJj-N0-ti4" secondAttribute="leading" id="Box-vH-wX0"/>
+                            <constraint firstItem="d2P-jm-SOD" firstAttribute="width" secondItem="Mxe-tz-jih" secondAttribute="width" multiplier="0.6" id="IHX-0a-Tyy"/>
+                            <constraint firstItem="3xF-VL-GRw" firstAttribute="trailing" secondItem="5Lm-0r-NaE" secondAttribute="trailing" constant="14" id="IkD-LF-Qco"/>
+                            <constraint firstItem="JcV-ob-0LB" firstAttribute="height" secondItem="Mxe-tz-jih" secondAttribute="height" multiplier="0.07" priority="999" id="Kk6-SA-SPe"/>
+                            <constraint firstItem="5Lm-0r-NaE" firstAttribute="top" secondItem="B4l-OI-72s" secondAttribute="bottom" constant="14" id="QgZ-sB-as1"/>
+                            <constraint firstItem="3xF-VL-GRw" firstAttribute="trailing" secondItem="B4l-OI-72s" secondAttribute="trailing" constant="-18" id="Web-HH-fAe"/>
+                            <constraint firstItem="B4l-OI-72s" firstAttribute="width" secondItem="Mxe-tz-jih" secondAttribute="width" multiplier="0.86" constant="18" id="ZLt-Dy-emj"/>
+                            <constraint firstItem="d2P-jm-SOD" firstAttribute="centerY" secondItem="3xF-VL-GRw" secondAttribute="centerY" multiplier="0.5" id="Zlj-0m-AIi"/>
+                            <constraint firstItem="3xF-VL-GRw" firstAttribute="trailing" secondItem="HB4-sl-hIF" secondAttribute="trailing" constant="40" id="c40-3q-K6Y"/>
+                            <constraint firstItem="B4l-OI-72s" firstAttribute="centerY" secondItem="3xF-VL-GRw" secondAttribute="centerY" multiplier="1.062" id="qhT-bY-bcb"/>
+                            <constraint firstItem="d2P-jm-SOD" firstAttribute="top" secondItem="piz-FP-pFc" secondAttribute="bottom" constant="40" id="smB-2E-OZb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3xF-VL-GRw"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqE-hM-zlf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947" y="150"/>
+            <point key="canvasLocation" x="946.39999999999998" y="149.77511244377811"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="azoreoIcon" width="40" height="40"/>
+    </resources>
 </document>
