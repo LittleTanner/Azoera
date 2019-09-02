@@ -87,5 +87,9 @@ class WelcomeViewController: UIViewController {
         loginToggleButton.setTitleColor(.subtleTextColor, for: .normal)
         faqButton.setTitleColor(.greenAccent, for: .normal)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
 }
